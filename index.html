@@ -1,0 +1,157 @@
+<html lang="en">
+
+<head>
+<title>PDF to Word Converter</title>
+
+
+<style>
+.container{
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color:rgb(177, 180, 210);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(13, 13, 13);
+}
+
+h1 {
+  text-align: center;
+  font-size: 80px;
+  color: rgb(23, 22, 22);
+  float: center;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+}
+
+h3 {
+  text-align: center ;
+  font-size: 30px
+}
+
+article {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  float: right;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 70%;
+}
+
+.rectangle {
+  width: 90%;
+  height: 50%;
+  border: 10px solid rgb(197, 231, 119);
+  float: right;
+  margin: 90px 35px 90px 35px;
+  background:rgb(132, 220, 166);
+  text-align: center;
+  font-size: 50px;
+}
+
+button {
+  margin: 0px 450px 0px 50x;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  }
+  
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+}
+</style>
+
+</head>
+
+<body class="container">
+<header>
+  
+    
+    <h1>PDF to Word Converter</h1>
+  
+</header>
+
+
+  
+  <article>
+
+    <div class="rectangle">
+
+      <h3>Upload a PDF file</h3>
+
+      <div class="choose">
+      <form action="convert.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="pdfFile" accept=".pdf" required>
+        <br>
+        <br>
+        <button class="button"><span>Convert</span></button>
+      </form>
+      </div>
+
+
+  </article>
+
+  
+
+
+
+<footer>
+  <p>@P Sneha : CodeClause Project</p>
+</footer>
+
+</body>
+</html>
